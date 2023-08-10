@@ -90,6 +90,8 @@
             operation.RetrieveTopTwoRecords(persons);
             Console.WriteLine();
             operation.RetrieveRecordsInBetweenAge(persons);
+            Console.WriteLine();
+            operation.RetrieveAverageAge(persons);
         }
     }
 }

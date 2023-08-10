@@ -20,6 +20,14 @@ namespace PersonDataManagement
             var resullt = list.Where(x => x.Age > 13 && x.Age < 18);
             Display(resullt.ToList());
         }
+
+        public void RetrieveAverageAge(List<Person> list)
+        {
+            var result = list.Average(x => x.Age);
+            Console.WriteLine("Average age is "+result);
+        }
+
+
         public void Display(List<Person> list)
         {
             foreach (var data in list)
