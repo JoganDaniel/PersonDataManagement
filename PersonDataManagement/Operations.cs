@@ -17,8 +17,8 @@ namespace PersonDataManagement
 
         public void RetrieveRecordsInBetweenAge(List<Person> list)
         {
-            var resullt = list.Where(x => x.Age > 13 && x.Age < 18);
-            Display(resullt.ToList());
+            var result = list.Where(x => x.Age > 13 && x.Age < 18);
+            Display(result.ToList());
         }
 
         public void RetrieveAverageAge(List<Person> list)
@@ -27,6 +27,13 @@ namespace PersonDataManagement
             Console.WriteLine("Average age is "+result);
         }
 
+        public void RetrievePersonDetailsByName(List<Person> list)
+        {
+            Console.WriteLine("Enter a name");
+            string name = Console.ReadLine();
+            var result = list.Where(x => x.Name.Equals(name));
+            Display(result.ToList());
+        }
 
         public void Display(List<Person> list)
         {

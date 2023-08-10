@@ -87,11 +87,10 @@
             Operations operation = new Operations();
             operation.Display(persons);
             Console.WriteLine();
-            operation.RetrieveTopTwoRecords(persons);
-            Console.WriteLine();
-            operation.RetrieveRecordsInBetweenAge(persons);
-            Console.WriteLine();
-            operation.RetrieveAverageAge(persons);
+            //operation.RetrieveTopTwoRecords(persons);
+            //operation.RetrieveRecordsInBetweenAge(persons);
+            //operation.RetrieveAverageAge(persons);
+            operation.RetrievePersonDetailsByName(persons);
         }
     }
 }
