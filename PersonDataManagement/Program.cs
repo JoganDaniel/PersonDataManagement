@@ -88,8 +88,7 @@
             operation.Display(persons);
             Console.WriteLine();
             operation.RetrieveTopTwoRecords(persons);
-            Console.WriteLine();
-            operation.RetrieveRecordsInBetweenAge(persons);
+            
         }
     }
 }
