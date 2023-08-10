@@ -34,7 +34,7 @@
                 SN = 4,
                 Name = "d",
                 Address = "d",
-                Age = 17
+                Age = 67
             });
 
             persons.Add(new Person()
@@ -58,7 +58,7 @@
                 SN = 7,
                 Name = "g",
                 Address = "g",
-                Age = 40
+                Age = 87
             });
 
             persons.Add(new Person()
@@ -90,7 +90,8 @@
             //operation.RetrieveTopTwoRecords(persons);
             //operation.RetrieveRecordsInBetweenAge(persons);
             //operation.RetrieveAverageAge(persons);
-            operation.RetrievePersonDetailsByName(persons);
+            //operation.RetrievePersonDetailsByName(persons);
+            operation.SkipRecordsOfAge(persons);
         }
     }
 }
