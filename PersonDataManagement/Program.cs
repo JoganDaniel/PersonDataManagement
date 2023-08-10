@@ -91,7 +91,8 @@
             //operation.RetrieveRecordsInBetweenAge(persons);
             //operation.RetrieveAverageAge(persons);
             //operation.RetrievePersonDetailsByName(persons);
-            operation.SkipRecordsOfAge(persons);
+            //operation.SkipRecordsOfAge(persons);
+            operation.DeletePersonDetailsByName(persons);
         }
     }
 }

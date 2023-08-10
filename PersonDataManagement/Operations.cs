@@ -41,8 +41,17 @@ namespace PersonDataManagement
             Display(result.ToList());
         }
 
-        public void Display(List<Person> list)
+        public void DeletePersonDetailsByName(List<Person> list)
         {
+            Console.WriteLine("Enter a name");
+            string name = Console.ReadLine();
+            var result = list.Find(x=>x.Name==name);
+            list.Remove(result);
+            Display(list);
+        }
+
+            public void Display(List<Person> list)
+            {
             foreach (var data in list)
             {
                 Console.WriteLine(data.SN+" "+data.Name+" "+data.Address+" "+data.Age);
